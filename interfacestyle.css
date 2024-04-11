@@ -1,0 +1,283 @@
+
+/*@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;        
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.navbar-links{
+    display:flex;
+    column-gap:30px;
+}
+.navbar-links a{
+    text-decoration: none;
+    color:#163020;
+}
+.navbar-links a:hover{
+    text-decoration:underline;
+    color: blueviolet;
+}
+
+.navbar-menu-toggle{
+    display: none;
+}
+.side-navbar{
+    background-color: #192655;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color:white;
+    transition: 1s;
+    
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+ 
+}
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices 
+}
+
+@media only screen and (min-width: 769px) {
+    /* Styles for larger screens 
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+.header-button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: #192655;
+    color: white;
+    cursor:pointer;
+}
+.header p{
+    margin-top: 20px;
+}
+#pay{
+    margin-top: 10px;
+}
+#h2{
+    margin-bottom: 30px;
+}
+#input_1{
+    height: 30px;
+    width: 250px;
+}
+#pay-hide{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: #192655;
+    color: white;
+    cursor:pointer;
+}
+#input-2{
+    height: 30px;
+    width: 250px;
+}
+#amount{
+    display: flex;
+}
+#amount h1{
+    margin-bottom: 20px;
+}
+#paying{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: #192655;
+    color: white;
+    cursor:pointer;
+}
+#balance{
+    display: flex;
+    padding: 30px;
+}
+#check-balance{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: #192655;
+    color: white;
+    cursor:pointer;
+}
+#amount h2{
+    margin-bottom: 10px;
+}
+#image{
+     
+        max-width: 100%;
+        height: auto;
+    
+    
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.navbar-links{
+    display:flex;
+    column-gap:30px;
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color:#163020;
+}
+
+.navbar-links a:hover{
+    text-decoration:underline;
+    color: blueviolet;
+}
+
+.side-navbar{
+    background-color: #192655;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color:white;
+    transition: 1s;
+}
+
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+}
+
+.side-navbar-links a:hover{
+    text-decoration: underline;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.header-button,
+#pay-hide,
+#paying,
+#check-balance{
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #192655;
+    color: white;
+    cursor:pointer;
+}
+
+#amount{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#amount h1,
+#amount h2{
+    margin: 10px 0;
+}
+
+#balance{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+#image{
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .header{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar-links{
+        display: none;
+    }
+
+    .navbar-menu-toggle{
+        display: block;
+    }
+
+    .side-navbar{
+        width: 60%;
+        left: -60%;
+    }
+
+    .header-button,
+    #pay-hide,
+    #paying,
+    #check-balance{
+        width: 100%;
+    }
+
+    #input_1,
+    #input-2{
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .navbar-menu-toggle{
+        display: none;
+    }
+
+    .side-navbar{
+        width: 50%;
+        left: -60%;
+    }
+}

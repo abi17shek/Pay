@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A_PAY</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1 id="h1">WELCOME TO A_Pay</h1>
+    <div class="login-box" style="display: block;">
+        <h2>Login</h2>
+        <form id="for" action="interface.html" >
+          <div class="user-box">
+            <input id="one" type="text" name="userid" required="required">
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input id="two" type="password" name="pass" required="required">
+            <label>Password</label>
+          </div>
+        	<input id="log" type="submit" onclick="return check(form)"  value="Login">
+          <a id="van" onclick="fan()" href="">not yet Register?</a>
+        </form>
+      </div>
+      <div id="registration" style="display: none;">
+        <input id="" type="text"
+
+
+      </div>
+</body>
+<script>
+function check(form) {
+  if (form.one.value == "admin" && form.two.value == "1234") {
+    return true;
+  } else {
+    alert("Incorrect Password or Username")
+    return false;
+  }
+}
+</script>
+</html>
